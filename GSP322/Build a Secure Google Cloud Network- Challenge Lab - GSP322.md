@@ -1,7 +1,10 @@
-Commands:
+# Build a Secure Google Cloud Network- Challenge Lab - GSP322
+
+
+# Commands:
 
 ======================================================
-1st command:
+## 1st command:
 ======================================================
 ```
 gcloud config set project qwiklabs-gcp-02-0693cd452d6a
@@ -13,7 +16,7 @@ export ZONE=us-east4-b
 export SSH_IAP_Network_tag=permit-ssh-iap-ingress-ql-316
 ```
 ======================================================
-2nd command:
+## 2nd command:
 ======================================================
 ```
 gcloud compute firewall-rules delete open-access --quiet
@@ -47,14 +50,14 @@ gcloud compute ssh bastion --zone=$ZONE --quiet
 ```
 
 ======================================================
-3rd command:
+## 3rd command:
 ======================================================
 ```
 gcloud compute ssh juice-shop --internal-ip
 ```
 
 ======================================================
-4th command:
+## 4th command:
 ======================================================
 ```
 curl -LO raw.githubusercontent.com/gcpsolution99/GCP-solution/main/GSP322.sh
